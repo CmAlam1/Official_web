@@ -6,6 +6,47 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Sobai Dekhbe</title>
 </head>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation: animation 6s ;
+        animation-delay:2s;
+        animation-iteration-count: 3;
+        animation-direction: reverse ;
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+    }
+    @keyframes animation{
+       0%{
+           background-color: yellow;
+           left:0px;
+           top: 0px;
+       }
+       25%{
+           background-color: green;
+           left: 200px;
+           top: 0px;
+       }
+       50%{
+           background-color: blue;
+           left: 200px;
+           top: 200px;
+       }
+       75%{
+           background-color: violet;
+           left: 0px;
+           top: 200px;
+       }
+       100%{
+           background-color: chocolate;
+           left: 0px;
+           top: 0px;
+       }
+    }
+</style>
 <body>
     <h1>My github dextop website</h1>
     <div>
@@ -19,6 +60,9 @@
     <p>going to add some lines </p>
     <p>now ill try  again to publish it on website</p>
     <p>Lets see if it works </p>
+
+    <div class="box"></div>
+    <br>
 
 
 </body>
