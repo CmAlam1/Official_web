@@ -7,6 +7,60 @@
     <title>Sobai Dekhbe</title>
 </head>
 <style>
+    *{
+        box-sizing: border-box;
+    }
+    .column{
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+    @media screen and (max-width:992px){
+        .column{
+            float: left;
+            width: 50%;
+        }
+    @media screen and (max-width:602px){
+        .column{
+            width: 100%;
+        }
+    }
+    .menu{
+        background-color: cadetblue;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu a{
+        text-decoration: none;
+        padding: 20px;
+        color: white;
+    }
+    .menu a:hover{
+        background-color: gray;
+    }
+    @media screen and (max-width:700px){
+        .menu{
+            flex-direction: column;
+            padding: 10px;
+        }
+        .menu a{
+            background-color: indigo;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 10px; 
+        }
+    }
+    body{
+        background-color: yellowgreen;
+    }
+    @media all and (max-width:900px){
+        body{
+            background-color: yellow;
+        }
+    }
+    .img{
+        width: 500px;
+    }
      .progressbar{
          background-color: gray;
          width: 500px;
@@ -140,7 +194,7 @@
         animation-iteration-count: 3;
         animation-direction: reverse ;
         animation-direction: alternate;
-       animation: name duration timing-function delay iteration-count direction fill-mode;
+      
     }
     @keyframes animation{
        0%{
@@ -172,6 +226,34 @@
     }
 </style>
 <body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact Me</a>
+       
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <h1>HTML</h1>
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. </p>
+        </div>
+        <div class="column">
+            <h1>CSS</h1>
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. </p>
+        </div>
+        <div class="column">
+            <h1>JavaScript</h1>
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. </p>
+        </div>
+        <div class="column">
+            <h1>Bootstrap</h1>
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. </p>
+        </div>
+    </div>
+
+    <br>
     <h1>My github dextop website</h1>
     <div>
         Good morning Dhaka
@@ -202,6 +284,12 @@
              <li class="ru">Ruby</li> 
          </ul>
      </div>
+     <br>
+
+     <div class="card">
+         <img class="img" src="https://previews.123rf.com/images/welcomia/welcomia1512/welcomia151200005/50689831-payments-system-hacking-online-credit-cards-payment-security-concept-hacker-in-black-gloves-hacking-.jpg" alt="">
+     </div>
+
 
      
 
